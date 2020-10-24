@@ -152,6 +152,7 @@
 /*SERVICOS-CONTAINER*/
 .servicos{
     grid-area: servicos;
+    padding: 50px;
 }
 
 .servicos h2{
@@ -178,6 +179,9 @@
     width: 250px;
     text-align: center;
     margin: 30px;
+}
+.fa{
+    margin-right: 10px;
 }
 
 /*FOOTER*/
