@@ -1,0 +1,215 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "header header"
+    "anuncio anuncio"
+    "content content"
+    "servicos servicos"
+    "footer footer";
+}
+
+
+/*HEADER*/
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: white;
+    background: center/cover url("../img/christopher-burns-ay0yCOjSMC0-unsplash.jpg");
+    background-repeat: no-repeat;
+    grid-template-rows:99vh;
+
+}
+.header span{
+    margin: 50px;
+}
+
+.header ul{
+    display:flex;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.header ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+.header ul .li-hover:hover{
+    background: grey;
+    border-radius: 5px;
+}
+
+.header-anuncio h2{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*ANUNCIO*/
+.anuncio{
+    grid-area: anuncio;
+    color: white;
+    margin-top: -450px;
+    text-align: center;
+}
+
+.anuncio  h2{
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+.anuncio  p{
+    font-size: 1.5em;
+}
+
+.anuncio  button{
+    margin-top: 30px;
+    padding: 10px;
+    color: rgb(53, 44, 44);
+    background: rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}
+
+
+
+
+/*CONTENT*/
+.content{
+    grid-area: content;
+    background-color: #ccdaff; 
+}
+
+.text-product{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.25rem;
+    padding: 50px;
+}
+
+
+.pacotes-img img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 30px 5px 10px 5px;
+    cursor: pointer;
+    
+}
+
+.pacotes-img h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(29, 24, 24);
+    width: 250px;
+    margin-left: 10px;
+}
+
+.pacotes{
+    display:flex;
+    flex-wrap: wrap;
+}
+.pacotes-container{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    float: left;
+    display: flex;
+    align-content: center;
+    margin-left: 60px;
+    flex: 1 1 100px;
+
+}
+
+
+
+
+
+.pacote-text-p {
+    top: 20px;
+    position: absolute;
+    background: orangered;
+    color: white;
+    font-size: 1.25rem;
+    padding: 7px;
+    border-radius: 10px 0 0px 0px;
+}
+
+.pacote-text-span {
+    left: 20px;
+    font-size: 2em;
+    padding: 7px;
+    line-height: 30px;
+    bottom: 120px;
+    position: absolute;
+    background: blue;
+    color:white;
+    border-radius: 10px 10px 10px 0px;
+}
+
+/*SERVICOS-CONTAINER*/
+.servicos{
+    grid-area: servicos;
+}
+
+.servicos h2{
+    text-align: center;
+    margin-top: 70px;
+    color: black;
+    font-size: 2.25rem;
+}
+.servicos-bg{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servico-item img{
+    width: 100px;
+    padding: 10px;
+}
+.servico-item p{
+    padding: 10px;
+ 
+}
+.servico-item{
+    width: 250px;
+    text-align: center;
+    margin: 30px;
+}
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    background-color: #ccdaff;
+    height: 400px;
+}
+.footer-bg{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+.map-footer{
+    z-index: 1;
+    position: absolute;
+    margin-left: 100px;
+
+}
+.footer-contact{
+    background:rgb(240, 237, 237);
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    left: 10px;
+    border-radius: 11px;
+    padding: 20px;
+}
