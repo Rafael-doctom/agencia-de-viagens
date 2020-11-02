@@ -1,4 +1,4 @@
-@media (max-width: 360px){
+@media (max-width: 370px){
     .header span{
         width: 140px;
     }
@@ -43,7 +43,6 @@
         border-radius: 10px 0 0px 0px; 
     }
     .footer-contact{
-        display:none;
     }
     
 }
