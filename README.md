@@ -1,1 +1,5 @@
-# agencia-de-viagens
+
+## 🛠 Tecnologias utilizadas
+- Visual Studio Code (IDE);
+- HTML5;
+- CSS3
