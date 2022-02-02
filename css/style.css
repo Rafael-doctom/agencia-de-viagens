@@ -7,6 +7,8 @@
     "content content"
     "servicos servicos"
     "footer footer";
+    background-color: #ccdaff;
+
 }
 
 
@@ -21,8 +23,9 @@
     grid-template-rows:99vh;
 
 }
-.header span{
+.header a{
     margin: 50px;
+    color:white;
 }
 
 .header ul{
@@ -77,8 +80,10 @@
 /*CONTENT*/
 .content{
     grid-area: content;
-    background-color: #ccdaff; 
+    margin: auto;
+    padding: 50px 0;
 }
+
 
 .text-product{
     display: flex;
@@ -153,6 +158,7 @@
 .servicos{
     grid-area: servicos;
     padding: 50px;
+    background-color: white;
 }
 
 .servicos h2{
@@ -189,6 +195,7 @@
     grid-area: footer;
     background-color: #ccdaff;
     height: 400px;
+    padding: 50px 0;
 }
 .footer-bg{
     display: flex;
