@@ -1,3 +1,98 @@
-.header{
-    background-color: red;
+.header {
+    width: 100%;
+    margin: 1.95rem 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbar a h1 {
+    font-size: 1.35rem;
+    font-weight: 100;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 1rem;
+    font-size: 1.15rem;
+    padding: 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover {
+    background-color: rgba(128, 128, 128, 0.693);
+    color: rgb(246, 237, 237);
+}
+
+.abrir {
+    display: none;
+}
+
+/* mediaQuieres */
+@media (max-width:768px) {
+    .navbar {
+        width: 95%;
+    }
+
+    .navbar a h1 {
+        font-size: 1.15rem;
+    }
+
+
+    .navbar ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width:425px) {
+    .navbar {
+        width: 95%;
+    }
+
+    .navbar a h1 {
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        background-color: rgb(32, 35, 32);
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.55rem;
+        padding-top: 10rem;
+    }
+
+    .navbar ul li {
+        font-size: 0.55rem;
+    }
+
+    .abrir {
+        display:block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    
 }
